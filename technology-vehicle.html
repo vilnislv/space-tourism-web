@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Tourism web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container technology">
+    <header class="primary-header flex">
+      <img class="logo" src="assets/shared/logo.svg" alt="logo">
+      <hr id="line"> 
+
+      <button class="mobile-nav-toggle"
+       aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li>
+            <a class="ups" href="index.html">
+              <span aria-hidden="true">00</span>Home
+            </a>
+          </li>
+          <li>
+            <a class="ups" href="destination-moon.html">
+              <span aria-hidden="true">01</span>Destination
+            </a>
+          </li>
+          <li>
+            <a class="ups" href="crew-commander.html">
+              <span aria-hidden="true">02</span>Crew
+            </a>
+          </li>
+          <li class="active">
+            <a class="ups" href="technology-vehicle.html">
+              <span aria-hidden="true">03</span>Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid mt-700">
+      <section class="hero-technology">
+        <h5 class="heading_4 text-white m-0"><span class="destination-number">03</span>Space launch 101 </h5>
+        <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="launch-vehicle-image">
+        <div class="info-container flex">
+          <ul class="technology-navigation mt-2">
+           <li><a class="tech-nav-active" href="technology-vehicle.html">1</a></li>
+           <li><a href="technology-spaceport.html">2</a></li>
+           <li><a href="technology-capsule.html">3</a></li>
+          </ul>
+          <div class="text-launch">  
+           <h6 class="subheading_3 ups m-0">The terminology...</h6>
+           <h3 class="heading_3 text-white ups mt-09">Launch vehicle</h3>
+           <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+             payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+             WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+             it's quite an awe-inspiring sight on the launch pad!</p>
+          </div>
+        </div>
+      </section>
+      <section class="technology-img">
+        <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="launch-vehicle-image">
+      </section>
+    </main>
+
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

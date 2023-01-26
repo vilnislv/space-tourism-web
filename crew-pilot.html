@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Tourism web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container crew">
+    <header class="primary-header flex">
+      <img class="logo" src="assets/shared/logo.svg" alt="logo">
+      <hr id="line"> 
+
+      <button class="mobile-nav-toggle"
+       aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li>
+            <a class="ups" href="index.html">
+              <span aria-hidden="true">00</span>Home
+            </a>
+          </li>
+          <li>
+            <a class="ups" href="destination-moon.html">
+              <span aria-hidden="true">01</span>Destination
+            </a>
+          </li>
+          <li  class="active">
+            <a class="ups" href="crew-commander.html">
+              <span aria-hidden="true">02</span>Crew
+            </a>
+          </li>
+          <li>
+            <a class="ups" href="technology-vehicle.html">
+              <span aria-hidden="true">03</span>Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid mt-700">
+      <section class="hero-crew pilot">
+        <h5 class="heading_4 text-white m-0"><span class="destination-number">02</span>Meet your crew</h5>
+        <h4 class="heading_4 text-white-05 ups mt-10 mb-0">Pilot</h4>
+        <h3 class="heading_3 text-white ups mt-09">Victor Glover</h3>
+        <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+          International Space Station. Glover is a commander in the U.S. Navy where 
+          he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+          station systems flight engineer.</p>
+        <div class="slider_buttons"> 
+          <a href="crew-commander.html"><button class="slider"></button></a>
+          <a href="crew-specialist.html"><button class="slider"></button></a>
+          <a href="crew-pilot.html"><button class="slider active_slide"></button></a>
+          <a href="crew-engineer.html"><button class="slider"></button></a>
+        </div>
+      </section>
+      <section class="slider-img pilot">
+        <img src="assets/crew/image-victor-glover.png" alt="pilot-image">
+        <hr id="line_3">
+      </section>
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

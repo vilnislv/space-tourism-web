@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    <title>Tourism web</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container home">
+      <header class="primary-header flex">
+        <img class="logo" src="assets/shared/logo.svg" alt="logo">
+        <hr id="line"> 
+
+        <button class="mobile-nav-toggle"
+         aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active">
+              <a class="ups" href="index.html">
+                <span aria-hidden="true">00</span>Home
+              </a>
+            </li>
+            <li>
+              <a class="ups" href="destination-moon.html">
+                <span aria-hidden="true">01</span>Destination
+              </a>
+            </li>
+            <li>
+              <a class="ups" href="crew-commander.html">
+                <span aria-hidden="true">02</span>Crew
+              </a>
+            </li>
+            <li>
+              <a class="ups" href="technology-vehicle.html">
+                <span aria-hidden="true">03</span>Technology
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main class="grid">
+        <section class="hero">
+          <h5 class="heading_5 mt-15">So, you want to travel to</h5>
+          <h1 class="ff-serif fs-900 text-white ups mt-2">Space</h1>
+          <p class="ff-sans-normal text-light fs-300 mb-0">Let’s face it; if you want to go to space, you might as well genuinely go to 
+            outer space and not hover kind of on the edge of it. Well sit back, and relax 
+            because we’ll give you a truly out of this world experience!</p>
+        </section>
+        <section class="btn-explore">
+          <button id="explore-btn" type="button"><a id="explore" href="#">Explore</a></button>
+        </section>
+        
+      </main>
+      
+    </div>
+  
+    <script src="/main.js"></script>
+  </body>
+</html>
